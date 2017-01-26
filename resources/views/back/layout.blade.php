@@ -13,8 +13,8 @@
     @yield('styles')
 
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="/admin/js/dist/js/html5shiv.min.js"></script>
+    <script src="/admin/js/dist/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -105,9 +105,6 @@
 
 @include('back.scripts')
 @yield('scripts')
-<div class="hide">
-    <a href="#thank" class="thank"></a>
-</div>
 
 </body>
 </html>

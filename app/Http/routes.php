@@ -19,6 +19,11 @@ Route::get('/', function () {
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
+    Route::get('/string', 'AdminController@getString');
+    Route::get('/text', 'AdminController@getText');
+    Route::get('/textarea', 'AdminController@getTextEditor');
+
+    //========================================================
     Route::get('/',         'AdminController@getIndex');
     // Таксаномия проекта. Визуальная зависимость данных.
     Route::get('/taxonomy', 'Back\TaxonomyController@showTaxonomy');
