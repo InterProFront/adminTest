@@ -25,8 +25,8 @@ class TaxonomyController extends Controller
         $resizeType = $subs->getSub('resize');
         $cropType = $subs->getSub('crop');
 
-        $show_arr['Тип resize'] = $this->selectAggrTypeFields($resizeType);
-        $show_arr['Тип crope'] = $this->selectAggrTypeFields($cropType);
+        $show_arr['resize'] = $this->selectAggrTypeFields($resizeType);
+        $show_arr['crope'] = $this->selectAggrTypeFields($cropType);
 
         return $show_arr;
     }
@@ -95,9 +95,31 @@ class TaxonomyController extends Controller
 
         $imageType = $tax->getType('image');
 
-        $show_arr['Тип Image'] = $this->selectBImageType($imageType);
+        $show_arr['Image'] = $this->selectBImageType($imageType);
+
 
         dd($show_arr);
+    }
+    public function showWidgetTax(Taxonomy $tax)    {
+        $blocks = $tax->getBlocks();
+
+        $show_arr = [];
+
+        foreach($blocks as $block)
+        {
+            $show_arr[$block->getName()] = $this->selectAggrTypeFields($block);
+
+            $show_arr[$block->getName()]['группы'] = $this->selectSubGroups($block);
+        }
+
+        $imageType = $tax->getType('image');
+
+        $show_arr['Image'] = $this->selectBImageType($imageType);
+
+
+        return view('back.taxonomy.index', [
+            'taxonomy' => $show_arr
+        ]);
     }
 
 

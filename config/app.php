@@ -161,7 +161,11 @@ return [
 
         //============================================
         Interpro\Core\CoreExecServiceProvider::class,
+        Interpro\Service\ServiceServiceProvider::class,
         Interpro\Extractor\ExtractorServiceProvider::class,
+        Interpro\FileAggr\FileAggrFirstServiceProvider::class,
+        Interpro\FileAggr\FileAggrSecondServiceProvider::class,
+        Interpro\FileAggr\FileAggrUseServiceProvider::class,
         //--------------------------------------------
         Interpro\Scalar\ScalarSecondServiceProvider::class,
         Interpro\Seo\SeoSecondServiceProvider::class,

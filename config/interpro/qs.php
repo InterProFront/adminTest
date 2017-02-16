@@ -8,7 +8,7 @@ return [
         'float'     => ['float_1'],
         'int'       => ['int_1'],
         'bool'      => ['bool_1'],
-        'country'   => ['country_field'],
+        'country'   => ['countr'],
         'image'     => ['image_1'],
         'groups'    => [
             'items' =>[
@@ -55,5 +55,10 @@ return [
                 'imageset'  => ['new_slider' => 'new_slide']
             ]
         ]
+    ],
+
+    //==================================================================================================================
+    'textfield_block' => [
+        'imageset' => ['default_imageset' => 'image_item']
     ]
 ];

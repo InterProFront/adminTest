@@ -1,0 +1,218 @@
+{
+  "exchange": {
+    "date": {
+      "attributes": {
+        "value": "2016-07-14"
+      },
+      "branch": {
+        "attributes": {
+          "value": "0"
+        },
+        "buy": {
+          "currency": [
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "826",
+                "dst": "GBP",
+                "scale": "1",
+                "amount": "402.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "978",
+                "dst": "EUR",
+                "scale": "1",
+                "amount": "376.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "643",
+                "dst": "RUB",
+                "scale": "1",
+                "amount": "5.14"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "840",
+                "dst": "USD",
+                "scale": "1",
+                "amount": "335.70"
+              }
+            }
+          ]
+        },
+        "sell": {
+          "currency": [
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "643",
+                "dst": "RUB",
+                "scale": "1",
+                "amount": "5.34"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "978",
+                "dst": "EUR",
+                "scale": "1",
+                "amount": "371.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "826",
+                "dst": "GBP",
+                "scale": "1",
+                "amount": "400.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "398",
+                "src": "KZT",
+                "dstcode": "840",
+                "dst": "USD",
+                "scale": "1",
+                "amount": "339.70"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "transfer": {
+    "date": {
+      "attributes": {
+        "value": "2016-14-07"
+      },
+      "branch": {
+        "attributes": {
+          "value": "0"
+        },
+        "buy": {
+          "currency": [
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "643",
+                "src": "RUB",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "5.1480"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "840",
+                "src": "USD",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "335.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "978",
+                "src": "EUR",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "372.19"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "978",
+                "src": "EUR",
+                "dstcode": "840",
+                "dst": "USD",
+                "scale": "1",
+                "amount": "1.0947"
+              }
+            }
+          ]
+        },
+        "sell": {
+          "currency": [
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "643",
+                "src": "RUB",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "5.3980"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "840",
+                "src": "USD",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "340.00"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "978",
+                "src": "EUR",
+                "dstcode": "398",
+                "dst": "KZT",
+                "scale": "1",
+                "amount": "378.69"
+              }
+            },
+            {
+              "attributes": {
+                "date": "2016-07-14",
+                "srccode": "978",
+                "src": "EUR",
+                "dstcode": "840",
+                "dst": "USD",
+                "scale": "1",
+                "amount": "1.1304"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

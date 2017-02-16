@@ -35,10 +35,54 @@ class AdminController extends Controller
             'solo_widgets'=> $block
         ]);
     }
-    public function getInt(){}
-    public function getFloat(){}
-    public function getImage(){}
-    public function getLink(){}
-    public function getBool(){}
-    public function getSlug(){}
+    public function getInt(){
+        $block = $this->extract->getBlock('solo_widgets');
+        return view('back.blocks.int',[
+            'solo_widgets'=> $block
+        ]);
+    }
+    public function getFloat(){
+        $block = $this->extract->getBlock('solo_widgets');
+        return view('back.blocks.float',[
+            'solo_widgets'=> $block
+        ]);
+    }
+    public function getImage(){
+        $block = $this->extract->getBlock('solo_widgets');
+        return view('back.blocks.image',[
+            'solo_widgets'=> $block
+        ]);
+    }
+    public function getLink(){
+        $block = $this->extract->getBlock('solo_widgets');
+        $country = $this->extract->selectGroup('country')->get();
+        return view('back.blocks.link',[
+            'solo_widgets'=> $block,
+            'country'   => $country
+        ]);
+    }
+    public function getBool(){
+        $block = $this->extract->getBlock('solo_widgets');
+
+        return view('back.blocks.bool',[
+            'solo_widgets'=> $block,
+        ]);
+    }
+
+
+
+
+    public function Links(){
+        $block = $this->extract->getBlock('group_for_links');
+        return view('back.blocks.links',[
+            'links' => $block
+        ]);
+    }
+
+    public function multiUpload(){
+        $block = $this->extract->getBlock('image_widget');
+        return view('back.blocks.multiupload',[
+            'img' => $block
+        ]);
+    }
 }

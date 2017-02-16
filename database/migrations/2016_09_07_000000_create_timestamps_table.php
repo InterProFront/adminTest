@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFloatsTable extends Migration
+class CreateTimestampsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,14 @@ class CreateFloatsTable extends Migration
      */
     public function up()
     {
-        Schema::create('floats', function(Blueprint $table)
+        Schema::create('timestamps', function(Blueprint $table)
         {
             $table->increments('id');
 
             $table->string('entity_name');
             $table->integer('entity_id');
             $table->string('name');
-            $table->float('value', 12, 3);
+            $table->timestamp('value');
         });
     }
 
@@ -30,6 +30,6 @@ class CreateFloatsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('floats');
+        Schema::drop('timestamps');
     }
 }
