@@ -30,6 +30,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/bool', 'AdminController@getBool');
     Route::get('/image', 'AdminController@getImage');
     Route::get('/link', 'AdminController@getLink');
+    Route::get('/file', 'AdminController@getFile');
 
 
     Route::get('/multi-block', 'AdminController@multiUpload');

@@ -25,6 +25,7 @@
     <script src="/admin/js/widgets/image/image.js"></script>
 
     <script src="/admin/js/widgets/table.js"></script>
+    <script src="/admin/js/widgets/file.js"></script>
     <script src="/admin/js/widgets/defaulSelect.js"></script>
     <script src="/admin/js/widgets/customSelect.js"></script>
     <script src="/admin/js/widgets/slug.js"></script>

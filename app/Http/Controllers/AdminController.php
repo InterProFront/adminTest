@@ -70,10 +70,16 @@ class AdminController extends Controller
     }
 
 
+    public function getFile(){
+        $block = $this->extract->getBlock('solo_widgets');
+        return view('back.blocks.file', [
+            'file' => $block
+        ]);
+    }
 
 
     public function Links(){
-        $block = $this->extract->getBlock('group_for_links');
+            $block = $this->extract->getBlock('group_for_links');
         return view('back.blocks.links',[
             'links' => $block
         ]);

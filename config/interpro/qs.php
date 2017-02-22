@@ -10,6 +10,7 @@ return [
         'bool'      => ['bool_1'],
         'country'   => ['countr'],
         'image'     => ['image_1'],
+        'file'      => ['test'],
         'groups'    => [
             'items' =>[
             ]

@@ -149,27 +149,26 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
 
-        //===================interpro=================
+        //============================================
         Interpro\Core\CoreTypesServiceProvider::class,
-        //--------------------------------------------
+        //------------------------------------------—
         Interpro\Scalar\ScalarFirstServiceProvider::class,
         Interpro\Seo\SeoFirstServiceProvider::class,
         Interpro\ImageAggr\ImageAggrFirstServiceProvider::class,
+        Interpro\FileAggr\FileAggrFirstServiceProvider::class,
         Interpro\QS\QSFirstServiceProvider::class,
         Interpro\Feedback\FeedbackFirstServiceProvider::class,
         //============================================
 
         //============================================
         Interpro\Core\CoreExecServiceProvider::class,
-        Interpro\Service\ServiceServiceProvider::class,
         Interpro\Extractor\ExtractorServiceProvider::class,
-        Interpro\FileAggr\FileAggrFirstServiceProvider::class,
-        Interpro\FileAggr\FileAggrSecondServiceProvider::class,
-        Interpro\FileAggr\FileAggrUseServiceProvider::class,
-        //--------------------------------------------
+        Interpro\Service\ServiceServiceProvider::class,
+        //------------------------------------------—
         Interpro\Scalar\ScalarSecondServiceProvider::class,
         Interpro\Seo\SeoSecondServiceProvider::class,
         Interpro\ImageAggr\ImageAggrSecondServiceProvider::class,
+        Interpro\FileAggr\FileAggrSecondServiceProvider::class,
         Interpro\QS\QSSecondServiceProvider::class,
         Interpro\Feedback\FeedbackSecondServiceProvider::class,
         //============================================
@@ -177,8 +176,9 @@ return [
         //============================================
         Interpro\Core\CoreTaxonomyServiceProvider::class,
         Interpro\Entrance\EntranceServiceProvider::class,
-        //--------------------------------------------
+        //------------------------------------------—
         Interpro\ImageAggr\ImageAggrUseServiceProvider::class,
+        Interpro\FileAggr\FileAggrUseServiceProvider::class,
         Interpro\Feedback\FeedbackUseServiceProvider::class,
         //============================================
 

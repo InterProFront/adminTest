@@ -17,7 +17,7 @@
                     <li><a href="/adm/bool">Логическое</a></li>
                     <li><a href="/adm/image">Картинка</a></li>
                     <li><a href="/adm/link">ССылка</a></li>
-                    <li><a href="/adm/slug">slug</a></li>
+                    <li><a href="/adm/file">Файлы</a></li>
                 </ul>
             </li>
 
